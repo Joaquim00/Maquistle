@@ -1,4 +1,4 @@
 ## Maquistle —— Wordle for Macanese Creole
 
-Original version by Josh Wardle. This is forked from Samuel Lo / Vatnid's JNDLE. 
+Original version by Josh Wardle. Forked from [Samuel Lo / Vatnid]'s JNDLE. 
 
