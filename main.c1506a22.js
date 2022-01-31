@@ -1358,6 +1358,176 @@
     });
     var La = [
 //START OF MAQUISTLE WORDS
+	    "abano",
+	    "abâno",
+	    "abêla",
+	    "abolô",
+	    "abuta",
+	    "achar",
+	    "adiós",
+	    "afiám",
+	    "afinâ",
+	    "afugâ",
+	    "almis",
+	    "ambâc",	    
+	    "ampás",
+	    "anona",
+	    "anôte",
+	    "ânsia",
+	    "areca",
+	    "aruda",
+	    "arvre",
+	    "áspro",
+	    "atinâ",
+	    "atirâ",
+	    "auábe",
+	    "avanâ",
+	    "avano",
+	    "azêdo",
+	    "azête",
+	    "babau",
+	    "babáu",
+	    "báchi",
+	    "bacia",
+	    "baiám",
+	    "baleu",
+	    "baléu",
+	    "balsa",
+	    "bantú",
+	    "barba",
+	    "bassâ",
+	    "basso",
+	    "bazar",
+	    "belis",
+	    "belle",
+	    "bêmdi",
+	    "bênça",
+	    "bento",
+	    "biato",
+	    "bicho",
+	    "bispo",
+	    "bobôi",
+	    "bóbra",
+	    "boiám",
+	    "boncô",
+	    "bonzo"
+	    "brêdo",
+	    "buscâ",
+	    "cacai",
+	    "cachí",
+	    "cáchi",
+	    "cacho",
+	    "cacús",
+	    "cáfre",
+	    "cagám",
+	    "cajám",
+	    "calça",
+	    "cális",
+	    "camsé",
+	    "campa",
+	    "canje",
+	    "capám",
+	    "capaz",
+	    "cáqui",
+	    "cartâ",
+	    "caurí",
+	    "caxám",
+	    "cento",
+	    "cerzí",
+	    "chado",
+	    "chalâ",
+	    "cháli",
+	    "chapâ",
+	    "chegâ",
+	    "cherâ",
+	    "chêro",
+	    "chico",
+	    "chicú",
+	    "chíli",
+	    "china",
+	    "chipí",
+	    "chirí",
+	    "chisu",
+	    "chito",
+	    "chocâ",
+	    "chofé",
+	    "cholê",
+	    "chomâ",
+	    "chubí",
+	    "chupâ",
+	    "churâ",
+	    "chuva",
+	    "cifrâ",
+	    "cinco",
+	    "cioso",
+	    "cissí",
+	    "cobra",
+	    "cocôi",
+	    "cojut",
+	    "colau",
+	    "comoa",
+	    "copám",
+	    "corda",
+	    "córda",
+	    "corta",
+	    "corte",
+	    "cosca",
+	    "cósca",
+	    "costa",
+	    "crecê",
+	    "cucús",
+	    "cudum",
+	    "culau",
+	    "curto",
+	    "curum",
+	    "custâ",
+	    "cutám",
+	    "dente",
+	    "doido",
+	    "fêmea",
+	    "festa",
+	    "fiado",
+	    "fichâ",
+	    "finzí",
+	    "ganga",
+	    "garfo",
+	    "gordo",
+	    "greza",
+	    "largâ",
+	    "limpo",
+	    "lingu",
+	    "macho",
+	    "madre",
+	    "merda",
+	    "mestê",
+	    "missó",
+	    "monte",
+	    "moura",
+	    "múchi",
+	    "nachi",
+	    "nhame",
+	    "noiva",
+	    "nunca",
+	    "padre",
+	    "papiâ",
+	    "pedra",
+	    "pobre"
+	    "porta",
+	    "pôsto",
+	    "prêgo",
+	    "putau",
+	    "sarna",
+	    "saúde",
+	    "sentâ",
+	    "sógra",
+	    "soldo",
+	    "tánto",
+	    "soldo",
+	    "torto",
+	    "váchi",
+	    "vantú",
+	    "vento",
+	    "vidro",
 	    
 //END OF MAQUISTLE WORDS
       ],
@@ -1539,7 +1709,7 @@
                   if (((e = s), !Ta.includes(e) && !La.includes(e)))
                     return (
                       a.setAttribute("invalid", ""),
-                      void this.addToast("Palavra inválida! 冇呢個字喎！")
+                      void this.addToast("Palavra inválida! 冇呢個詞！")
                     );
                   if (this.hardMode) {
                     var t = (function (e, a, s) {
@@ -1691,7 +1861,7 @@
                       this.$board
                         .querySelectorAll("game-row")
                         [this.rowIndex].setAttribute("invalid", ""),
-                      void this.addToast("Só palavras com 5 letras 記得打齊五個碼喎！")
+                      void this.addToast("Só palavras com 5 letras 要五個字母！")
                     );
                   this.evaluateRow();
                 }
@@ -2354,7 +2524,7 @@
     var Cs = document.createElement("template");
 	// CHANGE THIS
     Cs.innerHTML =
-      '\n  <style>\n    .container {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      padding: 16px 0; \n    }\n    h1 {\n      font-weight: 700;\n      font-size: 16px;\n      letter-spacing: 0.5px;\n      text-transform: uppercase;\n      text-align: center;\n      margin-bottom: 10px;\n    }\n  \n    #statistics {\n      display: flex;\n      margin-bottom: \n    }\n\n    .statistic-container {\n      flex: 1;\n    }\n\n    .statistic-container .statistic {\n      font-size: 36px;\n      font-weight: 400;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      letter-spacing: 0.05em;\n      font-variant-numeric: proportional-nums;\n    }\n\n    .statistic.timer {\n      font-variant-numeric: initial;\n    }\n\n    .statistic-container .label {\n      font-size: 12px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n    }\n\n    #guess-distribution {\n      width: 80%;\n    }\n\n    .graph-container {\n      width: 100%;\n      height: 20px;\n      display: flex;\n      align-items: center;\n      padding-bottom: 4px;\n      font-size: 14px;\n      line-height: 20px;\n    }\n\n    .graph-container .graph {\n      width: 100%;\n      height: 100%;\n      padding-left: 4px;\n    }\n\n    .graph-container .graph .graph-bar {\n      height: 100%;\n      /* Assume no wins */\n      width: 0%;\n      position: relative;\n      background-color: var(--color-absent);\n      display: flex;\n      justify-content: center;\n    }\n\n    .graph-container .graph .graph-bar.highlight {\n      background-color: var(--color-correct);\n    }\n\n    .graph-container .graph .graph-bar.align-right {\n      justify-content: flex-end;\n      padding-right: 8px;\n    }\n\n    .graph-container .graph .num-guesses {\n      font-weight: bold;\n      color: var(--tile-text-color);\n    }\n\n    #statistics,\n    #guess-distribution {\n      padding-bottom: 10px;\n    }\n\n    .footer {\n      display: flex;\n      width: 100%;\n    }\n\n    .countdown {\n      border-right: 1px solid var(--color-tone-1);\n      padding-right: 12px;\n      width: 50%;\n    }\n\n    .share {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      padding-left: 12px;\n      width: 50%;\n    }\n\n    .no-data {\n      text-align: center;\n    }\n\n    button#share-button {\n      background-color: var(--key-bg-correct);\n      color: var(--key-evaluated-text-color);\n      font-family: inherit;\n      font-weight: bold;\n      border-radius: 4px;\n      cursor: pointer;\n      border: none;\n      user-select: none;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      -webkit-tap-highlight-color: rgba(0,0,0,0.3);\n      width: 80%;\n      font-size: 20px;\n      height: 52px;\n      -webkit-filter: brightness(100%);\n    }\n    button#share-button:hover {\n      opacity: 0.9;\n    }\n    button#share-button game-icon {\n      width: 24px;\n      height: 24px;\n      padding-left: 8px;\n    }\n  </style>\n\n  <div class="container">\n    <h1>ESTATÍsTICAS 統計數據</h1>\n    <div id="statistics"></div>\n    <h1>TENTATIVAS 估答次數數目分佈</h1>\n    <div id="guess-distribution"></div>\n    <div class="footer"></div>\n  </div>\n';
+      '\n  <style>\n    .container {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      padding: 16px 0; \n    }\n    h1 {\n      font-weight: 700;\n      font-size: 16px;\n      letter-spacing: 0.5px;\n      text-transform: uppercase;\n      text-align: center;\n      margin-bottom: 10px;\n    }\n  \n    #statistics {\n      display: flex;\n      margin-bottom: \n    }\n\n    .statistic-container {\n      flex: 1;\n    }\n\n    .statistic-container .statistic {\n      font-size: 36px;\n      font-weight: 400;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      letter-spacing: 0.05em;\n      font-variant-numeric: proportional-nums;\n    }\n\n    .statistic.timer {\n      font-variant-numeric: initial;\n    }\n\n    .statistic-container .label {\n      font-size: 12px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n    }\n\n    #guess-distribution {\n      width: 80%;\n    }\n\n    .graph-container {\n      width: 100%;\n      height: 20px;\n      display: flex;\n      align-items: center;\n      padding-bottom: 4px;\n      font-size: 14px;\n      line-height: 20px;\n    }\n\n    .graph-container .graph {\n      width: 100%;\n      height: 100%;\n      padding-left: 4px;\n    }\n\n    .graph-container .graph .graph-bar {\n      height: 100%;\n      /* Assume no wins */\n      width: 0%;\n      position: relative;\n      background-color: var(--color-absent);\n      display: flex;\n      justify-content: center;\n    }\n\n    .graph-container .graph .graph-bar.highlight {\n      background-color: var(--color-correct);\n    }\n\n    .graph-container .graph .graph-bar.align-right {\n      justify-content: flex-end;\n      padding-right: 8px;\n    }\n\n    .graph-container .graph .num-guesses {\n      font-weight: bold;\n      color: var(--tile-text-color);\n    }\n\n    #statistics,\n    #guess-distribution {\n      padding-bottom: 10px;\n    }\n\n    .footer {\n      display: flex;\n      width: 100%;\n    }\n\n    .countdown {\n      border-right: 1px solid var(--color-tone-1);\n      padding-right: 12px;\n      width: 50%;\n    }\n\n    .share {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      padding-left: 12px;\n      width: 50%;\n    }\n\n    .no-data {\n      text-align: center;\n    }\n\n    button#share-button {\n      background-color: var(--key-bg-correct);\n      color: var(--key-evaluated-text-color);\n      font-family: inherit;\n      font-weight: bold;\n      border-radius: 4px;\n      cursor: pointer;\n      border: none;\n      user-select: none;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      -webkit-tap-highlight-color: rgba(0,0,0,0.3);\n      width: 80%;\n      font-size: 20px;\n      height: 52px;\n      -webkit-filter: brightness(100%);\n    }\n    button#share-button:hover {\n      opacity: 0.9;\n    }\n    button#share-button game-icon {\n      width: 24px;\n      height: 24px;\n      padding-left: 8px;\n    }\n  </style>\n\n  <div class="container">\n    <h1>ESTATÍSTICAS 統計數據</h1>\n    <div id="statistics"></div>\n    <h1>TENTATIVAS 估答次數分佈</h1>\n    <div id="guess-distribution"></div>\n    <div class="footer"></div>\n  </div>\n';
     var Ls = document.createElement("template");
     Ls.innerHTML =
       '\n  <div class="statistic-container">\n    <div class="statistic"></div>\n    <div class="label"></div>\n  </div>\n';
@@ -2363,7 +2533,7 @@
       '\n    <div class="graph-container">\n      <div class="guess"></div>\n      <div class="graph">\n        <div class="graph-bar">\n          <div class="num-guesses">\n        </div>\n      </div>\n      </div>\n    </div>\n';
     var Is = document.createElement("template");
     Is.innerHTML =
-      '\n  <div class="countdown">\n    <h1>PRÓXIMA PALVRA 距離下個 Maquistle 仲有</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      PARTILHAR 分享 <game-icon icon="share"></game-icon>\n    </button>\n  </div>\n';
+      '\n  <div class="countdown">\n    <h1>PRÓXIMO MAQUISTLE 距離下個 Maquistle 仲有</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      PARTILHAR 分享 <game-icon icon="share"></game-icon>\n    </button>\n  </div>\n';
     var Ms = {
         currentStreak: "Current Streak",
         maxStreak: "Max Streak",
@@ -2582,7 +2752,7 @@
     customElements.define("game-switch", $s);
     var Ps = document.createElement("template");
     Ps.innerHTML =
-      '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Estung'a sâm Wordle di Maquista / Patuá di Macau!</p>\n      <p>Advinha o <strong>Maquistle</strong> em 6 tentativas！</p>\n      <p>喺六次之內估中今日嘅 <strong>Maquistle</strong>！</p>\n      <p>Cada tentativa tem de ser uma palavra de 5 letras. Usa o botão Enter ↵ para submeter.</p>\n      <p>每一次估嘅答案都一定要係五個字母嘅詞，撳 ENTER ↵ 掣就可以提交。</p>\n      <p>Depois de cada tentativa, a cor does quadrados mudará para mostrar quão perto está da solução</p>\n      <p>每次提交答案之後，啲方格會變成唔同嘅顏色，作為你下一次估嘅提示。</p>\n      <div class="examples">\n        <p><strong>例子</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="m" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="u"></game-tile>\n          </div>\n          <p>A letra <strong>M</strong> está na palavra e na posição correta.</p>\n        <p>個答案裏面有 <strong>M</strong> 呢個字母，而且位置正確。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="ê" evaluation="present" reveal></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>A letra <strong>Ê</strong> está na palavra mas na posição errada.</p>\n      <p>個答案係有<strong>Ê</strong>呢個字母，但係位置唔啱。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="á"></game-tile>\n            <game-tile letter="m" evaluation="absent" reveal></game-tile>\n          </div>\n          <p>A letra <strong>M</strong>não está na palavra.</p>\n      <p>答案裏面冇<strong>M</strong>呢個字母。</p>\n        </div>\n      </div>\n      <p><strong>Há uma nova Maquistle por dia! 每日都會有新嘅 Maquistle！<strong></p>\n   </div>\n      </div>\n      <p>Adaptação do <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a> de Josh Wardle por <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a>.</p>\n      <p>呢個遊戲原版係 Josh Wardle 設計嘅 <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a>，由 <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a> 改版。</p>\n      <p>Obrigadu: <a href="https://palavra-do-dia.pt" target="blank">Palavra do Dia</a>, <a href="https://samuello.io/jndle/" target="blank">JNDLE 字道</a>, <a href="https://chaaklau.github.io/zidou/ target="blank">ZIDOU</a>.</p>  </div>\n  </section>\n';
+      '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Estung'a sâm ung'a wordle di Maquista / Patuá di Macau!</p>\n      <p>This is a wordle in Maquista/ Macanese Patuá!</p>\n      <p>Este é um wordle em Patuá de Macau!</p>\n      <p>呢個係一個澳門土生葡語嘅 wordle!</p>\n      <p>Advinha o <strong>Maquistle</strong> em 6 tentativas！</p>\n      <p>喺六次之內估中今日嘅 <strong>Maquistle</strong>！</p>\n      <p>Cada tentativa tem de ser uma palavra de 5 letras. Usa o botão Enter ↵ para submeter.</p>\n      <p>每一次估嘅答案都一定要係五個字母嘅詞，撳 ENTER ↵ 掣就可以提交。</p>\n      <p>Depois de cada tentativa, a cor dos quadrados mudará para mostrar quão perto estás da solução</p>\n      <p>每次提交答案之後，啲方格會變成唔同嘅顏色，作為你下一次估嘅提示。</p>\n      <div class="examples">\n        <p><strong>Exemplos 例子</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="m" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="u"></game-tile>\n          </div>\n          <p>A letra <strong>M</strong> está na palavra e na posição correta.</p>\n        <p>個答案裏面有 <strong>M</strong> 呢個字母，而且位置正確。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="ê" evaluation="present" reveal></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>A letra <strong>Ê</strong> está na palavra mas na posição errada.</p>\n      <p>個答案係有<strong>Ê</strong>呢個字母，但係位置唔啱。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="á"></game-tile>\n            <game-tile letter="m" evaluation="absent" reveal></game-tile>\n          </div>\n          <p>A letra <strong>M</strong>não está na palavra.</p>\n      <p>答案裏面冇<strong>M</strong>呢個字母。</p>\n        </div>\n      </div>\n      <p><strong>Há uma nova Maquistle por dia! 每日都會有新嘅 Maquistle！<strong></p>\n   </div>\n      </div>\n      <p>Adaptação do <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a> de Josh Wardle por <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a>.</p>\n      <p>呢個遊戲原版係 Josh Wardle 設計嘅 <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a>，由 <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a> 改版。</p>\n      <p>Obrigadu: <a href="https://palavra-do-dia.pt" target="blank">Palavra do Dia</a>, <a href="https://samuello.io/jndle/" target="blank">JNDLE 字道</a>, <a href="https://chaaklau.github.io/zidou/ target="blank">ZIDOU</a>.</p>\n      <p>Words extracted from: Miguel de Senna Fernandes & Alan Norman Baxter (2001). Maquista Chapado – vocabulário e expressões do crioulo português de Macau. Macau: Instituto Internacional de Macau.</p>  </div>\n  </section>\n';
     var Hs = (function (e) {
       r(t, e);
       var a = h(t);
