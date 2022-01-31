@@ -1,4 +1,4 @@
-## JNDLE 字道 —— 倉頡版 Wordle
+## Maquistle —— Wordle for Macanese Creole
 
-原本嘅設計者同 programmer 係 Josh Wardle。
+Original version by Josh Wardle. This is forked from github.com/vatnid/jndle
 
