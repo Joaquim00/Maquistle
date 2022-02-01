@@ -2636,7 +2636,7 @@
                               n = e.isWin,
                               r = JSON.parse(window.localStorage.getItem(j)),
                               i = JSON.parse(window.localStorage.getItem(S)),
-                              l = "JNDLE ".concat(s);
+                              l = "Maquistle ".concat(s);
                             (l += " ".concat(n ? t : "X", "/").concat(6)),
                               o && (l += "*");
                             var d = "";
@@ -2667,6 +2667,7 @@
                                   }),
                                   (d += "\n"));
                               }),
+				    //change this
                               { text: "".concat(l, "\n\n").concat(d.trimEnd()).concat("\n\nhttps://samuello.io/jndle") }
                             );
                           })({
