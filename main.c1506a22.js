@@ -1522,6 +1522,7 @@
 	    "sentâ",
 	    "sógra",
 	    "soldo",
+	    "taipa",
 	    "tánto",
 	    "soldo",
 	    "torto",
