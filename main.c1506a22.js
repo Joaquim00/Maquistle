@@ -2118,7 +2118,7 @@
         s = e % 100;
       return e + (a[(s - 20) % 10] || a[s] || a[0]);
     }
-    var Ha = new Date(2022, 2, 1, 0, 0, 0, 0);
+    var Ha = new Date(2021, 5, 19, 0, 0, 0, 0);
     function Na(e, a) {
       var s = new Date(e),
         t = new Date(a).setHours(0, 0, 0, 0) - s.setHours(0, 0, 0, 0);
