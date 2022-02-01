@@ -1358,7 +1358,7 @@
     });
     var La = [
 	    "abuta",
-	    "ach'á",
+	    "achʼá",
 	    "achar",
 	    "adiós",
 	    "afiám",
@@ -1596,7 +1596,7 @@
 	    "triol",
 	    "tudúm",
 	    "turum",
-	    "ung'a",
+	    "ungʼa",
 	    "vagar",
 	    "vánda",
 	    "vantú",
@@ -1616,7 +1616,7 @@
 	    "abolô",
 	    "abulô",
 	    "abuta",
-	    "ach'á",
+	    "achʼá",
 	    "achar",
 	    "adiós",
 	    "afiám",
@@ -2070,7 +2070,7 @@
 	    "túnel",
 	    "turum",
 	    "unçôm",
-	    "ung'a",
+	    "ungʼa",
 	    "unsóm",
 	    "uvido",
 	    "váchi",
@@ -2563,7 +2563,7 @@
                     .getElementById("help-button")
                     .addEventListener("click", function (a) {
                       var s = e.$game.querySelector("game-page"),
-                        t = document.createTextNode("COMO JOGAR 點樣玩");
+                        t = document.createTextNode("COMO JOGAR 點玩");
                       s.appendChild(t);
                       var o = document.createElement("game-help");
                       o.setAttribute("page", ""),
@@ -2676,7 +2676,7 @@
 	// CHANGE THIS
     var ds = [
         ["q", "e", "é", "ê", "r", "t", "u", "ú", "i", "í", "o", "ó", "ô", "p"],
-        ["-", "a", "á", "â", "s", "d", "f", "g", "h", "j", "k", "l", "'", "-"],
+        ["-", "a", "á", "â", "s", "d", "f", "g", "h", "j", "k", "l", "ʼ", "-"],
         ["-", "â†µ", "z", "x", "c", "ç", "v", "b", "n", "m", "â†", "-"],
       ],
       us = (function (e) {
@@ -2752,7 +2752,7 @@
                         var a;
                         if (
 				(e >= "a" && e <= "z") ||
-				"á" == e || "â" == e || "ç" == e || "é" == e || "ê" == e || "í" == e || "ó" == e || "ô" == e || "ú" == e || "'" == e ||   
+				"á" == e || "â" == e || "ç" == e || "é" == e || "ê" == e || "í" == e || "ó" == e || "ô" == e || "ú" == e || "ʼ" == e ||   
                           "â†" === e ||
                           "â†µ" === e
                         ) {
@@ -3310,7 +3310,7 @@
     customElements.define("game-switch", $s);
     var Ps = document.createElement("template");
     Ps.innerHTML =
-      '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Estungʼa sâm ungʼa wordle di Maquista / Patuá di Macau!</p>\n      <p>This is a wordle in Maquista/ Macanese Patuá!</p>\n      <p>Este é um wordle em Patuá de Macau!</p>\n      <p>呢個係一個澳門土生葡語嘅 wordle!</p>\n      <p>Advinha o <strong>Maquistle</strong> em 6 tentativas！</p>\n      <p>喺六次之內估中今日嘅 <strong>Maquistle</strong>！</p>\n      <p>Cada tentativa tem de ser uma palavra de 5 letras. Usa o botão Enter ↵ para submeter.</p>\n      <p>每一次估嘅答案都一定要係五個字母嘅詞，撳 ENTER ↵ 掣就可以提交。</p>\n      <p>Depois de cada tentativa, a cor dos quadrados mudará para mostrar quão perto estás da solução</p>\n      <p>每次提交答案之後，啲方格會變成唔同嘅顏色，作為你下一次估嘅提示。</p>\n      <div class="examples">\n        <p><strong>Exemplos 例子</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="m" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="u"></game-tile>\n          </div>\n          <p>A letra <strong>M</strong> está na palavra e na posição correta.</p>\n        <p>個答案裏面有 <strong>M</strong> 呢個字母，而且位置正確。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="ê" evaluation="present" reveal></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>A letra <strong>Ê</strong> está na palavra mas na posição errada.</p>\n      <p>個答案係有<strong>Ê</strong>呢個字母，但係位置唔啱。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="f"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="h"></game-tile>\n            <game-tile letter="ó"></game-tile>\n            <game-tile letter="c" evaluation="absent" reveal></game-tile>\n          </div>\n          <p>A letra <strong>C</strong>não está na palavra.</p>\n      <p>答案裏面冇<strong>C</strong>呢個字母。</p>\n        </div>\n      </div>\n      <p><strong>Há uma nova Maquistle por dia! 每日都會有新嘅 Maquistle！<strong></p>\n   </div>\n      </div>\n      <p>Adaptação do <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a> de Josh Wardle por <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a>.</p>\n      <p>呢個遊戲原版係 Josh Wardle 設計嘅 <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a>，由 <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a> 改版。</p>\n      <p>Brigadu: <a href="https://palavra-do-dia.pt" target="blank">Palavra do Dia</a>, <a href="https://samuello.io/jndle/" target="blank">JNDLE 字道</a>, <a href="https://chaaklau.github.io/zidou/ target="blank">ZIDOU</a>, <a href="https://facle.netlify.app" target="blank">FACLE</a>.</p>\n      <p>Most words extracted from: Miguel de Senna Fernandes & Alan Norman Baxter (2001). Maquista Chapado – vocabulário e expressões do crioulo português de Macau. Macau: Instituto Internacional de Macau.</p>  </div>\n  </section>\n';
+      '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Estungʼa sâm ungʼa wordle di Maquista / Patuá di Macau!</p>\n      <p>This is a wordle in Maquista/ Macanese Patuá!</p>\n      <p>Este é um wordle em Patuá de Macau!</p>\n      <p>呢個係一個澳門土生葡語嘅 wordle!</p>\n      <p>Advinha o <strong>Maquistle</strong> em 6 tentativas！</p>\n      <p>喺六次之內估中今日嘅 <strong>Maquistle</strong>！</p>\n      <p>Cada tentativa tem de ser uma palavra de 5 letras. Usa o botão Enter ↵ para submeter.</p>\n      <p>每一次估嘅答案都一定要係五個字母嘅詞，撳 ENTER ↵ 掣就可以提交。</p>\n      <p>Depois de cada tentativa, a cor dos quadrados mudará para mostrar quão perto estás da solução</p>\n      <p>每次提交答案之後，啲方格會變成唔同嘅顏色，作為你下一次估嘅提示。</p>\n      <div class="examples">\n        <p><strong>Exemplos 例子</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="m" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="u"></game-tile>\n          </div>\n          <p>A letra <strong>M</strong> está na palavra e na posição correta.</p>\n        <p>個答案裏面有 <strong>M</strong> 呢個字母，而且位置正確。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="ê" evaluation="present" reveal></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>A letra <strong>Ê</strong> está na palavra mas na posição errada.</p>\n      <p>個答案係有<strong>Ê</strong>呢個字母，但係位置唔啱。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="f"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="h"></game-tile>\n            <game-tile letter="ó"></game-tile>\n            <game-tile letter="c" evaluation="absent" reveal></game-tile>\n          </div>\n          <p>A letra <strong>C</strong>não está na palavra.</p>\n      <p>答案裏面冇<strong>C</strong>呢個字母。</p>\n        </div>\n      <p>Note: 1. O hífen é ignorado 唔理連字號; 2.<strong>RR</strong> não existe <strong>RR</strong> 唔存在; 3. <strong>ÃÕ</strong> não existem <strong>ÃÕ</strong>唔存在, p. ex. <strong>NAÇÁM</strong> "nação"; 4.<strong>UNGʼA</strong> "um/uma"</p>\n      </div>\n      </div>\n      <p><strong>Há uma nova Maquistle por dia! 每日都會有新嘅 Maquistle！<strong></p>\n   </div>\n      </div>\n      <p>Adaptação do <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a> de Josh Wardle por <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a>.</p>\n      <p>呢個遊戲原版係 Josh Wardle 設計嘅 <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a>，由 <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a> 改版。</p>\n      <p>Brigadu: <a href="https://palavra-do-dia.pt" target="blank">Palavra do Dia</a>, <a href="https://samuello.io/jndle/" target="blank">JNDLE 字道</a>, <a href="https://chaaklau.github.io/zidou/ target="blank">ZIDOU</a>, <a href="https://facle.netlify.app" target="blank">FACLE</a>.</p>\n      <p>Most words extracted from: Miguel de Senna Fernandes & Alan Norman Baxter (2001). Maquista Chapado – vocabulário e expressões do crioulo português de Macau. Macau: Instituto Internacional de Macau.</p>  </div>\n  </section>\n';
     var Hs = (function (e) {
       r(t, e);
       var a = h(t);
