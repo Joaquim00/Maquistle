@@ -1363,6 +1363,7 @@
 	    "abêla",
 	    "abolô",
 	    "abuta",
+	    "ach'á",
 	    "achar",
 	    "adiós",
 	    "afiám",
