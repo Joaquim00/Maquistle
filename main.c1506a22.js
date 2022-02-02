@@ -1225,7 +1225,7 @@
     }
     var Sa = document.createElement("template");
     Sa.innerHTML =
-      '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Modo difícil 困難模式</div>\n          <div class="description">Qualquer pista revelada terá de ser usada nas tentativas seguintes 任何提示都必須要喺下一次估答嘅時候用</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Tema escuro 黑夜模式</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Modo daltónico 色盲模式</div>\n          <div class="description">Cores de alto contraste 高對比度顏色</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Comentários 建議</div>\n        </div>\n        <div class="control">\n          <a href="https://twitter.com/HilariodeSousa">Twitter</a>\n          |\n          <a href="https://github.com/Joaquim00/Maquistle" target="blank" >GitHub</a>\n        </div>\n      </div>\n    </section>\n  </div>\n  <div id="footnote">\n    <div id="copyright">Copyright Josh Wardle 2021-2022. He actually made it! All Rights Reserved.</div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n';
+      '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Modo difícil 困難模式</div>\n          <div class="description">Qualquer pista revelada terá de ser usada nas tentativas seguintes</div>\n       <div class="description">任何提示都必須要喺下一次估答嘅時候用</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Tema escuro 黑夜模式</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Modo daltónico 色盲模式</div>\n          <div class="description">Cores de alto contraste 高對比度顏色</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Comentários 建議</div>\n        </div>\n        <div class="control">\n          <a href="https://twitter.com/HilariodeSousa">Twitter</a>\n          </div>\n      </div>\n    </section>\n  </div>\n  <div id="footnote">\n    <div id="copyright">Copyright Josh Wardle 2021-2022. He actually made it! All Rights Reserved.</div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n';
     var _a = (function (e) {
       r(t, e);
       var a = h(t);
@@ -2132,7 +2132,7 @@
     function Ga(e) {
       return Na(Ha, e);
     }
-    var Ba = "aáâbcçdeéêfghiíjlmnoóôpqrstuúvxz'",
+    var Ba = "aáâbcçdeéêfghiíjlmnoóôpqrstuúvxzʼ",
       Fa = [].concat(g(Ba.split("").slice(13)), g(Ba.split("").slice(0, 13)));
     function Wa(e) {
       for (var a = "", s = 0; s < e.length; s++) {
@@ -2196,7 +2196,12 @@
       es = "WIN",
       as = "FAIL",
       ss = [
-        "Parabéns! 恭喜晒！"
+        "Parabéns! 恭喜！",
+	"Parabéns! 恭喜！",
+	"Ui-di bêm! 好勁！",
+	"Ui-di bêm! 好勁！",
+	"Ui-di bêm! 好勁！",
+	"Ufa! 好險！",
       ],
       ts = (function (e) {
         r(t, e);
@@ -2277,7 +2282,7 @@
                             return {
                               validGuess: !1,
                               errorMessage: ""
-                                .concat(Pa(t + 1), " letter must be ")
+                                .concat(Pa(t + 1), " letra deve ser 字母要係 ")
                                 .concat(a[t].toUpperCase()),
                             };
                         for (var o = {}, n = 0; n < s.length; n++)
@@ -2290,7 +2295,7 @@
                           if ((r[i] || 0) < o[i])
                             return {
                               validGuess: !1,
-                              errorMessage: "O palpite deve conter 估答一定要有 ".concat(
+                              errorMessage: "O palpite deve conter 答案要有 ".concat(
                                 i.toUpperCase()
                               ),
                             };
@@ -2539,7 +2544,7 @@
                         case "hard-mode":
                           return void (n
                             ? e.addToast(
-                                "O modo difícil pode ser activado no início de uma rodada 困難模式淨係可以一開頭度開",
+                                "O modo difícil pode ser activado no início de uma rodada 困難模式淨係可以一開始開",
                                 1500,
                                 !0
                               )
@@ -3091,13 +3096,13 @@
       '\n    <div class="graph-container">\n      <div class="guess"></div>\n      <div class="graph">\n        <div class="graph-bar">\n          <div class="num-guesses">\n        </div>\n      </div>\n      </div>\n    </div>\n';
     var Is = document.createElement("template");
     Is.innerHTML =
-      '\n  <div class="countdown">\n    <h1>PRÓXIMO MAQUISTLE 距離下個 Maquistle 仲有</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      PARTILHAR 分享 <game-icon icon="share"></game-icon>\n    </button>\n  </div>\n';
+      '\n  <div class="countdown">\n    <h1>PRÓXIMO MAQUISTLE 距離下次仲有</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      PARTILHAR 分享 <game-icon icon="share"></game-icon>\n    </button>\n  </div>\n';
     var Ms = {
         currentStreak: "Current Streak",
         maxStreak: "Max Streak",
-        winPercentage: "% Vitórias 贏",
-        gamesPlayed: "Jogados 玩次",
-        gamesWon: "Vencidos 贏次",
+        winPercentage: "% Vitórias",
+        gamesPlayed: "Jogados",
+        gamesWon: "Vencidos",
         averageGuesses: "Average Guesses",
       },
       Os = (function (e) {
@@ -3310,7 +3315,7 @@
     customElements.define("game-switch", $s);
     var Ps = document.createElement("template");
     Ps.innerHTML =
-      '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Estungʼa sâm ungʼa wordle di Maquista / Patuá di Macau!</p>\n      <p>This is a wordle in Maquista/ Macanese Patuá!</p>\n      <p>Este é um wordle em Patuá de Macau!</p>\n      <p>呢個係一個澳門土生葡語嘅 wordle!</p>\n      <p>Advinha o <strong>Maquistle</strong> em 6 tentativas！</p>\n      <p>喺六次之內估中今日嘅 <strong>Maquistle</strong>！</p>\n      <p>Cada tentativa tem de ser uma palavra de 5 letras. Usa o botão Enter ↵ para submeter.</p>\n      <p>每一次估嘅答案都一定要係五個字母嘅詞，撳 ENTER ↵ 掣就可以提交。</p>\n      <p>Depois de cada tentativa, a cor dos quadrados mudará para mostrar quão perto estás da solução</p>\n      <p>每次提交答案之後，啲方格會變成唔同嘅顏色，作為你下一次估嘅提示。</p>\n      <div class="examples">\n        <p><strong>Exemplos 例子</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="m" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="u"></game-tile>\n          </div>\n          <p>A letra <strong>M</strong> está na palavra e na posição correta.</p>\n        <p>個答案裏面有 <strong>M</strong> 呢個字母，而且位置正確。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="ê" evaluation="present" reveal></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>A letra <strong>Ê</strong> está na palavra mas na posição errada.</p>\n      <p>個答案係有<strong>Ê</strong>呢個字母，但係位置唔啱。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="f"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="h"></game-tile>\n            <game-tile letter="ó"></game-tile>\n            <game-tile letter="c" evaluation="absent" reveal></game-tile>\n          </div>\n          <p>A letra <strong>C</strong>não está na palavra.</p>\n      <p>答案裏面冇<strong>C</strong>呢個字母。</p>\n        </div>\n      <p>Note: 1. O hífen é ignorado 唔理連字號; 2.<strong>RR</strong> não existe <strong>RR</strong> 唔存在; 3. <strong>ÃÕ</strong> não existem <strong>ÃÕ</strong>唔存在, p. ex. <strong>NAÇÁM</strong> "nação"; 4.<strong>UNGʼA</strong> "um/uma"</p>\n      </div>\n      </div>\n      <p><strong>Há uma nova Maquistle por dia! 每日都會有新嘅 Maquistle！<strong></p>\n   </div>\n      </div>\n      <p>Adaptação do <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a> de Josh Wardle por <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a>.</p>\n      <p>呢個遊戲原版係 Josh Wardle 設計嘅 <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a>，由 <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sosua</a> 改版。</p>\n      <p>Brigadu: <a href="https://palavra-do-dia.pt" target="blank">Palavra do Dia</a>, <a href="https://samuello.io/jndle/" target="blank">JNDLE 字道</a>, <a href="https://chaaklau.github.io/zidou/ target="blank">ZIDOU</a>, <a href="https://facle.netlify.app" target="blank">FACLE</a>.</p>\n      <p>Most words extracted from: Miguel de Senna Fernandes & Alan Norman Baxter (2001). Maquista Chapado – vocabulário e expressões do crioulo português de Macau. Macau: Instituto Internacional de Macau.</p>  </div>\n  </section>\n';
+      '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Estungʼa sâm ungʼa wordle di Maquista / Patuá di Macau!</p>\n      <p>Este é um wordle em Patuá macaense! 呢個係一個澳門土生葡語嘅 wordle!</p>\n      <p>Advinha o <strong>Maquistle</strong> em 6 tentativas！ 喺六次之內估中今日嘅 <strong>Maquistle</strong>！</p>\n      <p>Cada tentativa tem de ser uma palavra de 5 letras. Usa o botão Enter ↵ para submeter. 每一次估嘅答案都一定要係五個字母嘅詞，撳 ENTER ↵ 掣就可以提交。</p>\n      <p>Depois de cada tentativa, a cor dos quadrados mudará para mostrar quão perto estás da solução. 每次提交答案之後，啲方格會變成唔同嘅顏色，作為你下一次估嘅提示。</p>\n      <div class="examples">\n        <p><strong>Exemplos 例子</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="m" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="c"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="u"></game-tile>\n          </div>\n          <p>A letra <strong>M</strong> está na palavra e na posição correta. 個答案有 <strong>M</strong> 呢個字母，而且位置正確。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="ê" evaluation="present" reveal></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>A letra <strong>Ê</strong> está na palavra mas na posição errada. 個答案有 <strong>Ê</strong> 呢個字母，但係位置唔啱。</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="f"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="h"></game-tile>\n            <game-tile letter="ó"></game-tile>\n            <game-tile letter="c" evaluation="absent" reveal></game-tile>\n          </div>\n          <p>A letra <strong>C</strong> não está na palavra. 答案裏面冇 <strong>C</strong> 呢個字母。</p>\n        </div>\n      <p>Notas 注意: 1. O hífen é ignorado. 連字號唔使理; 2.O dígrafo <strong>RR</strong> não existe na ortografia macaense. 澳門土生葡語冇 <strong>RR</strong> 呢個二合字母。</p>\n      </div>\n      </div>\n      <p><strong>Há uma nova Maquistle por dia! 每日都會有新嘅 Maquistle！</strong></p>\n   </div>\n      </div>\n      <p>Adaptação do <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a> de Josh Wardle por <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sousa</a>. 呢個遊戲原版係 Josh Wardle 設計嘅 <a href="https://www.powerlanguage.co.uk/wordle" target="blank">Wordle</a>，由 <a href="http://hilario.bambooradical.com" target="blank">Hilário de Sousa</a> 改版。</p>\n      <p>Mercê 鳴謝: <a href="https://samuello.io/jndle/" target="blank">JNDLE 字道</a>, <a href="https://facle.netlify.app" target="blank">FACLE</a>, <a href="https://palavra-do-dia.pt" target="blank">Palavra do Dia</a>.</p>\n      <p>Most words extracted from: Miguel Senna Fernandes & Alan Norman Baxter (2001). Maquista Chapado – vocabulário e expressões do crioulo português de Macau. Macau: Instituto Internacional de Macau. An abridged <a href="https://www.macaneselibrary.org/pub/english/uipatua.htm" target="blank">electronic version</a>.</p>  </div>\n  </section>\n';
     var Hs = (function (e) {
       r(t, e);
       var a = h(t);
