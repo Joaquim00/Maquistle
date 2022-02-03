@@ -2109,6 +2109,8 @@
 	    "vidro",
 	    "vilám",
 	    "vinho",
+	    "vinte",
+	    "vinti",
 	    "vista",
 	    "vosso",
 	    "vôsso",
