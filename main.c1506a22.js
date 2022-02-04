@@ -2667,8 +2667,8 @@
     var ls = document.createElement("template");
     ls.innerHTML = '\n  <div class="spacer"></div>\n';
     var ds = [
-        ["-", "q", "e", "r", "t", "u", "i", "o", "p", "-"],
-        ["a", "s", "d", "f", "g", "h", "j", "k", "l", "ʼ"],
+        ["q", "e", "r", "t", "u", "i", "o", "p"],
+        ["a", "s", "d", "f", "g", "h", "j", "l", "ʼ"],
         ["â†µ", "z", "x", "c", "ç", "v", "b", "n", "m", "â†"],
       ],
       us = (function (e) {
