@@ -2226,7 +2226,7 @@
 	"Parabéns! 恭喜！",
 	"Ui-di bêm! 好勁！",
 	"Ui-di bêm! 好勁！",
-	"Doçi! 正！！",
+	"Doçi! 正！",
 	"Ufa! 好險！",
       ],
       ts = (function (e) {
