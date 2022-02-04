@@ -286,6 +286,7 @@ lombo
 lugar
 lumiâ
 maçám
+macau
 macho
 madre
 malau
@@ -475,6 +476,8 @@ trazê
 trelâ
 trepâ
 tréta
+tréze
+trézi
 triol
 tripa
 tudúm
