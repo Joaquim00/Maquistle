@@ -3225,7 +3225,7 @@
                               n = e.isWin,
                               r = JSON.parse(window.localStorage.getItem(j)),
                               i = JSON.parse(window.localStorage.getItem(S)),
-                              l = "Maquistle ".concat(s);
+                              l = "Maquistle (trabalo!)".concat(s);
                             (l += " ".concat(n ? t : "X", "/").concat(6)),
                               o && (l += "*");
                             var d = "";
