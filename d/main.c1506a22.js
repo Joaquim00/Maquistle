@@ -2308,7 +2308,9 @@
                             return {
                               validGuess: !1,
                               errorMessage: ""
-                                .concat(Pa(t + 1), " letra deve ser 字母要係 ")
+                                .concat(Pa(t + 1), " letra deve ser ")
+                                .concat(a[t].toUpperCase(), " ")
+				.concat(Pa(t + 1), " 字母要係 ")
                                 .concat(a[t].toUpperCase()),
                             };
                         for (var o = {}, n = 0; n < s.length; n++)
@@ -2321,9 +2323,11 @@
                           if ((r[i] || 0) < o[i])
                             return {
                               validGuess: !1,
-                              errorMessage: "O palpite deve conter 答案要有 ".concat(
-                                i.toUpperCase()
-                              ),
+                              errorMessage: "" 
+				    .concat("O palpite deve conter ")
+				    .concat(i.toUpperCase(), " ")
+			            .concat("答案要有 ")
+				    .concat(i.toUpperCase()),
                             };
                         return { validGuess: !0 };
                       })(
