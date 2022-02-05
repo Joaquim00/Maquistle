@@ -2271,7 +2271,7 @@
                               validGuess: !1,
                               errorMessage: ""
                                 .concat(Pa(t + 1), " letra deve ser ")
-                                .concat(a[t].toUpperCase())
+                                .concat(a[t].toUpperCase(), " ")
 				.concat(Pa(t + 1), " 字母要係 ")
                                 .concat(a[t].toUpperCase()),
                             };
