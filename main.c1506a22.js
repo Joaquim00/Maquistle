@@ -2270,7 +2270,9 @@
                             return {
                               validGuess: !1,
                               errorMessage: ""
-                                .concat(Pa(t + 1), " letra deve ser 字母要係 ")
+                                .concat(Pa(t + 1), " letra deve ser ")
+                                .concat(a[t].toUpperCase())
+				.concat(Pa(t + 1), " 字母要係 ")
                                 .concat(a[t].toUpperCase()),
                             };
                         for (var o = {}, n = 0; n < s.length; n++)
